@@ -14,7 +14,7 @@
 body{
 	background-color: #fff;
 	font-family: 'Roboto', sans-serif;
-	font-size:16px;
+	font-size:15px;
 	font-weight: 300; 
 }
 
@@ -81,9 +81,10 @@ ul.list-square li{
 ul.list-square li::before{
 	content:'';
 	display:block;
-	width:5px;
-	height:5px;
-	background-color: #000;
+	width:0;
+	height:0;
+	border:2px solid #000; 
+	background-color: transparent;
 	position: absolute;
 	left:0;
 	top:8px;
@@ -161,8 +162,15 @@ ul.list-square li::before{
 	position:relative;
 }
 
+@media screen{
+
+	a.scroll-top{
+		display:block;
+	}
+
+}
+
 a.scroll-top{
-	display:block;
 	width:60px;
 	height:30px;
 	background-color:#0071bc;
@@ -276,6 +284,7 @@ table.tbl tr td{
 	border-bottom:1px solid #ccc;
 	font-size: 14px;
 	padding: 7px;
+	text-align: left;
 }
 
 table.tbl tr th{
@@ -285,10 +294,171 @@ table.tbl tr th{
 	border-bottom-color:#333;
 }
 
+.divider{
+	border-bottom: 1px solid #ccc;
+	margin: 15px 0;
+}
+
+.divider-double{
+	border-bottom: 2px solid #ccc;
+	margin: 15px 0;
+}
+
+.data-list{}
+
+.data-list dt,
+.data-list dd{
+	display: inline-block;
+	float: left;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+
+.data-list dt{
+	width: 20%;
+	position: relative;
+	font-weight: 400;
+}
+
+.data-list dt::after{
+	content: ':';
+	display: block;
+	width:5px;
+	height: 20px;
+	vertical-align: middle;
+	position: absolute;
+	right: 7px;
+	top: 3px;
+}
+
+.data-list dd{
+	width: 80%;
+}
+
+.label{
+	display: inline-block;
+	padding: 4px 7px;
+	font-size: 13px;
+	position: relative;
+}
+
+.label.before::before{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border:11px solid transparent;
+	border-right-color: #0071bc;
+	position: absolute;
+	left: -22px;
+	top: 1px;
+}
+
+.blue{
+	background-color: #0071bc;
+	color: #fff;
+}
+
+.pull-right{
+	float: right;
+}
+
 @media print{
-	.quick-go-section,
-	a.quick-go,
-	a.scroll-top{
-		display: none;
+
+	@page {
+    size: auto;   /* auto is the initial value */
+    margin: 10px 40px;  /* this affects the margin in the printer settings */
+	}
+
+	*, *:before,*:after{
+		font-size: 12px;
+	}
+
+	ul.list-square li,
+	ul.list-square li a,
+	table.tbl tr td,
+	table.tbl tr th,
+	p{
+		font-size: 12px;
+	}
+
+	body{
+		font-size: 12px;
+		line-height: 18px;
+	}
+  .quick-go-section,
+  a.quick-go,
+  a.scroll-top{
+    display: none !important;
+  }
+
+  .profile-photo img{
+  	width: 50%;
+  }
+
+  .side-bar{
+  	width: 20%;
+  }
+
+  .content-panel{
+  	width: 80%;
+  }
+
+  .section-title{
+  	position: relative;
+  	color: #fff !important;
+  	background: transparent !important;
+  	font-size: 12px;
+  	padding:7px !important;
+  	z-index: 10;
+  }
+
+  .section-title::before{
+  	content: '';
+  	display: block;
+  	width: 100%;
+  	height: 100%;
+  	border-bottom: 22px solid #000;
+  	z-index: -2;
+  	position: absolute;
+  	left: 2px;
+  	top: -5px;
+  }
+  .blue{
+  	background-color: transparent !important;
+  	color: #fff !important;
+  }
+
+
+  ul.list-square li{
+  	padding-bottom: 5px !important;
+  }
+
+  .label.before::after{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 0;
+		border:11.5px solid #0071bc;
+		position: absolute;
+		z-index: -2;
+		left: -2px;
+		top: 1px;
+	}
+
+	.page-break-print{
+		page-break-inside: avoid !important;
+	}
+
+	.brdr{
+		border-bottom:1px solid rgba(0,0,0,0.4);
+	}
+
+	table.tbl tr th{
+		border-bottom: 1px solid #ccc !important;
+		border-right: 1px solid #ccc !important;
+		border-top: 1px solid #ccc !important;
+		color: #000 !important;
+		text-align: left !important;
 	}
 }
