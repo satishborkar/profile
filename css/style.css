@@ -8,14 +8,14 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300; 
+	font-weight: 300;
 }
 
 body{
 	background-color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-size:15px;
-	font-weight: 300; 
+	font-weight: 300;
 }
 
 a,a:hover,a:active,a:focus{
@@ -83,7 +83,7 @@ ul.list-square li::before{
 	display:block;
 	width:0;
 	height:0;
-	border:2px solid #000; 
+	border:2px solid #000;
 	background-color: transparent;
 	position: absolute;
 	left:0;
@@ -122,10 +122,13 @@ ul.list-square li::before{
 	border-top:1px solid #0071bc;
 }
 
-.side-bar,
-.content-panel{
+.side-bar{
 	display:block;
 	float:left;
+}
+
+.content-panel{
+	float: right;
 }
 
 .side-bar{
@@ -272,7 +275,8 @@ ul.quick-go-section li{
 	background-color: #0071bc;
 }
 
-table.tbl{
+table.tbl,
+table.tbl tr th{
 	border-left:1px solid #ccc;
 	border-top:1px solid #ccc;
 	border-collapse: collapse;
@@ -374,6 +378,10 @@ table.tbl tr th{
 		font-size: 12px;
 	}
 
+	.profile-photo{
+		display: none;
+	}
+
 	ul.list-square li,
 	ul.list-square li a,
 	table.tbl tr td,
@@ -383,7 +391,7 @@ table.tbl tr th{
 	}
 
 	body{
-		font-size: 12px;
+		font-size: 12px !important;
 		line-height: 18px;
 	}
   .quick-go-section,
@@ -424,6 +432,12 @@ table.tbl tr th{
   	left: 2px;
   	top: -5px;
   }
+
+.header::after,
+.brdr:after{
+	width: 20%;
+}
+
   .blue{
   	background-color: transparent !important;
   	color: #fff !important;
