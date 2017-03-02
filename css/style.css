@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
+/*@Author Satish Borkar*/
+
 *, :before, *:after{
 	margin:0;
 	padding:0;
@@ -14,7 +16,7 @@
 body{
 	background-color: #fff;
 	font-family: 'Roboto', sans-serif;
-	font-size:15px;
+	font-size:14px;
 	font-weight: 300;
 }
 
@@ -31,7 +33,7 @@ a:hover,a:focus{
 
 p,
 ul.list-square li{
-	font-size:15px;
+	font-size:14px;
 	line-height:22px;
 }
 
@@ -180,7 +182,7 @@ a.scroll-top{
 	position:fixed;
 	bottom:7%;
 	right:3%;
-	font-size:15px;
+	font-size:14px;
 	text-align:center;
 	line-height:30px;
 	text-decoration:none;
