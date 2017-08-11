@@ -162,7 +162,7 @@ ul.list-square li::before{
 .section-title{
 	display:inline-block;
 	padding:7px 15px;
-	background-color:#000;
+	background-color:#0071bc;
 	color:#fff;
 	position:relative;
 }
