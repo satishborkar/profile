@@ -22,11 +22,11 @@ Personal Profile Page
 * Well experience in Japanese application development. 
 
 ## Personal Web links
-[LinkedIn](https://www.linkedin.com/in/satishborkar)
-[GitHub](https://github.com/satishborkar)
-[GitHub URls](https://github.com/satishborkar/gitHubUrls)
-[Personal Profile](https://satishborkar.github.io/profile/)
-[Codewars](https://www.codewars.com/users/satyaspb)
+* [LinkedIn](https://www.linkedin.com/in/satishborkar)
+* [GitHub](https://github.com/satishborkar)
+* [GitHub URls](https://github.com/satishborkar/gitHubUrls)
+* [Personal Profile](https://satishborkar.github.io/profile/)
+* [Codewars](https://www.codewars.com/users/satyaspb)
 
 ## Personal Details
-Email:satyaspb@gmail.com
+Email: satyaspb@gmail.com
