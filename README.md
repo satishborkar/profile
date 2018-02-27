@@ -24,7 +24,7 @@ Personal Profile Page
 ## Personal Web links
 * [LinkedIn](https://www.linkedin.com/in/satishborkar)
 * [GitHub](https://github.com/satishborkar)
-* [GitHub URls](https://github.com/satishborkar/gitHubUrls)
+* [GitHub URL's](https://github.com/satishborkar/gitHubUrls)
 * [Personal Profile](https://satishborkar.github.io/profile/)
 * [Codewars](https://www.codewars.com/users/satyaspb)
 
