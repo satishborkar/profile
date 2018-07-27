@@ -472,7 +472,7 @@ table.tbl tr th {
     }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
 	body{
 		transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 	}
