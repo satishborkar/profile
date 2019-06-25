@@ -176,6 +176,11 @@ ul.list-square li::before {
     position: relative;
 }
 
+.organization-title{
+    color: #0071bc;
+    font-weight: 600;
+}
+
 @media screen {
     a.scroll-top {
         display: block;
