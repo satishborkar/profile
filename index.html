@@ -415,7 +415,8 @@
     var expInYear = data.getFullYear() - 2012;
     var expInMonth = data.getMonth();
     var totalMonth = (expInYear * 12) + (expInMonth + 1);
-    exp.innerHTML = totalMonth/12;
+    var totalExp = totalMonth/12
+    exp.innerHTML = totalExp.toFixed(1);
 
   </script>
 
