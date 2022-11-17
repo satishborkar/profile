@@ -29,7 +29,3 @@ Personal Profile Page
 - [GitHub URL's](https://github.com/satishborkar/gitHubUrls)
 - [Personal Profile](https://satishborkar.github.io/profile/)
 - [Codewars](https://www.codewars.com/users/satyaspb)
-
-## Personal Details
-
-Email: satyaspb@gmail.com
