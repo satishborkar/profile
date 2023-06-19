@@ -4,7 +4,7 @@ Personal Profile Page
 
 ## Experience Summary
 
-- Around 10+ years of experience in designing, developing and integrating software products and applications using Front end technologies JavaScript, React-JS, React-hooks, Redux, Redux-Saga, Redux-Persist, TailwindCSS, Axios, Redux-Observable, HTML4/5, CSS2/3, SASS, First / Hybrid, Responsive Web Development (RWD) and Single Page Application (SPA)] application.
+- Around 11.5+ years of experience in designing, developing and integrating software products and applications using Front end technologies JavaScript, React-JS, React-hooks, Redux, Redux-Saga, Redux-Persist, TailwindCSS, Axios, Redux-Observable, HTML4/5, CSS2/3, SASS, First / Hybrid, Responsive Web Development (RWD) and Single Page Application (SPA)] application.
 - Experience in design and development POCs(proof of concept), Prototypes for advanced features and designs.
 - Experience in collaborating with delivery teams during design and development phases to ensure adherence to UI architectural standards and best practices.
 - Experience in providing technical guidance to both local and remote development teams as required
@@ -29,7 +29,3 @@ Personal Profile Page
 - [GitHub URL's](https://github.com/satishborkar/gitHubUrls)
 - [Personal Profile](https://satishborkar.github.io/profile/)
 - [Codewars](https://www.codewars.com/users/satyaspb)
-
-## Personal Details
-
-Email: satyaspb@gmail.com
