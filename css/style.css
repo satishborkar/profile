@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /*@Author Satish Borkar*/
 
 *,
@@ -10,7 +11,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
 }
 
@@ -52,24 +53,24 @@ ul.list-square li {
 }
 
 ul.null,
-ul.null > li {
+ul.null>li {
     list-style: none;
     list-style-type: none;
     margin: 0;
 }
 
-ul.null > li,
+ul.null>li,
 .row {
     width: 100%;
     float: left;
 }
 
-ul.null > li {
+ul.null>li {
     display: block;
     padding: 30px 0;
 }
 
-ul.null > li::after,
+ul.null>li::after,
 .row {
     content: "";
     clear: both;
@@ -94,7 +95,7 @@ ul.list-square li::before {
     display: block;
     width: 0;
     height: 0;
-    border: 2px solid #000;
+    border: 2px solid #333;
     background-color: transparent;
     position: absolute;
     left: 0;
@@ -103,13 +104,13 @@ ul.list-square li::before {
 
 .brdr {
     position: relative;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #333;
 }
 
 .header {
-    border-bottom: 4px solid #000;
     padding: 10px 0;
     position: relative;
+    border-bottom: 4px solid transparent;
 }
 
 .header::after,
@@ -121,10 +122,21 @@ ul.list-square li::before {
     height: 0;
 }
 
+.header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    right: 0;
+    bottom: -4px;
+}
+
 .header::after {
     bottom: -4px;
     /* right: 0; */
     border-bottom: 4px solid #0071bc;
+    display: none;
 }
 
 .brdr:after {
@@ -176,6 +188,7 @@ ul.list-square li::before {
     background-color: #0071bc;
     color: #fff;
     position: relative;
+    border-radius: 3px;
 }
 
 .organization-title {
@@ -207,7 +220,7 @@ a.scroll-top {
 a.scroll-top:hover {
     text-decoration: none;
     border-bottom: 0;
-    background-color: #000;
+    background-color: #333;
 }
 
 a.quick-go {
@@ -238,7 +251,7 @@ a.quick-go .hr {
 a.quick-go:hover,
 a.quick-go:focus,
 a.quick-go.active {
-    background-color: #000;
+    background-color: #333;
     border-bottom: 0;
 }
 
@@ -250,7 +263,7 @@ a.quick-go.active .hr {
 
 .quick-go-section {
     display: none;
-    background-color: #000;
+    background-color: #333;
     width: 250px;
     height: auto;
     min-height: 80px;
@@ -293,25 +306,25 @@ ul.quick-go-section li {
 
 table.tbl,
 table.tbl tr th {
-    border-left: 1px solid #ccc;
-    border-top: 1px solid #ccc;
+    border-left: 1px solid rgb(33, 32, 32);
+    border-top: 1px solid rgb(33, 32, 32);
     border-collapse: collapse;
 }
 
 table.tbl tr th,
 table.tbl tr td {
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-right: 1px solid rgb(33, 32, 32);
+    border-bottom: 1px solid rgb(33, 32, 32);
     font-size: 14px;
     padding: 7px;
     text-align: left;
 }
 
 table.tbl tr th {
-    background-color: #000;
+    background-color: rgb(115, 111, 111);
     color: #fff;
-    border-right-color: #333;
-    border-bottom-color: #333;
+    border-right-color: rgb(33, 32, 32);
+    border-bottom-color: rgb(33, 32, 32);
 }
 
 .divider {
@@ -324,8 +337,7 @@ table.tbl tr th {
     margin: 15px 0;
 }
 
-.data-list {
-}
+.data-list {}
 
 .data-list dt,
 .data-list dd {
@@ -384,100 +396,6 @@ table.tbl tr th {
     float: right;
 }
 
-@media print {
-    @page {
-        size: auto;
-        /* auto is the initial value */
-        margin: 10px 40px;
-        /* this affects the margin in the printer settings */
-    }
-    *,
-    *:before,
-    *:after {
-        font-size: 12px;
-        font-family: "Roboto", sans-serif;
-    }
-    .profile-photo {
-        display: none;
-    }
-    ul.list-square li,
-    ul.list-square li a,
-    table.tbl tr td,
-    table.tbl tr th,
-    p {
-        font-size: 12px;
-    }
-    body {
-        font-size: 12px !important;
-        line-height: 18px;
-        font-family: "Roboto", sans-serif;
-    }
-    .quick-go-section,
-    a.quick-go,
-    a.scroll-top {
-        display: none !important;
-    }
-    .profile-photo img {
-        width: 50%;
-    }
-    .side-bar {
-        width: 20%;
-    }
-    .content-panel {
-        width: 80%;
-    }
-    .section-title {
-        position: relative;
-        color: #fff !important;
-        background: transparent !important;
-        font-size: 12px;
-        padding: 7px !important;
-        z-index: 10;
-    }
-
-    .section-title::before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-bottom: 22px solid #000;
-        z-index: -2;
-        position: absolute;
-        left: 2px;
-        top: -5px;
-    }
-    .header::after,
-    .brdr:after {
-        width: 20%;
-    }
-    .blue {
-        background-color: transparent !important;
-        color: #fff !important;
-    }
-    ul.list-square li {
-        padding-bottom: 5px !important;
-    }
-
-    .label.before::before,
-    .label.before::after {
-        display: none;
-    }
-
-    .page-break-print {
-        page-break-after: always !important;
-    }
-    .brdr {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    }
-    table.tbl tr th {
-        border-bottom: 1px solid #ccc !important;
-        border-right: 1px solid #ccc !important;
-        border-top: 1px solid #ccc !important;
-        color: #000 !important;
-        text-align: left !important;
-    }
-}
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
         transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -487,29 +405,36 @@ table.tbl tr th {
         padding-bottom: 0;
         margin-top: 10px;
     }
+
     .page-container {
         padding: 10px;
         width: 100%;
     }
+
     .profile-photo {
         display: none;
     }
-    ul.null > li {
+
+    ul.null>li {
         padding: 10px 0;
     }
+
     .side-bar,
     .content-panel,
     .data-list dt,
     .data-list dd {
         width: 100%;
     }
+
     .section-title {
         display: block;
     }
+
     .content-panel p,
     .content-panel ul.list-square {
         padding-left: 15px;
     }
+
     a.quick-go,
     .quick-go-section {
         left: 10px;
@@ -527,5 +452,169 @@ table.tbl tr th {
 
     .data-list dt::after {
         content: " ";
+    }
+}
+
+@media screen {
+
+    .header::before,
+    .section-title,
+    .blue,
+    a.scroll-top,
+    .quick-go-section,
+    .quick-go {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        border-radius: 3px;
+    }
+
+    .quick-go-section a {
+        border-bottom-color: #c9c4c4;
+        transition: 200ms;
+    }
+
+    .quick-go-section a:hover,
+    .quick-go-section a:focus,
+    .quick-go-section a:active {
+        border-radius: 3px;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 7s ease infinite;
+    }
+
+    .label.before::before {
+        display: none;
+    }
+
+    .organization-title,
+    a.linkedIn {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media print {
+    @page {
+        size: auto;
+        /* auto is the initial value */
+        margin: 10px 40px;
+        /* this affects the margin in the printer settings */
+    }
+
+    *,
+    *:before,
+    *:after {
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .profile-photo {
+        display: none;
+    }
+
+    ul.list-square li,
+    ul.list-square li a,
+    table.tbl tr td,
+    table.tbl tr th,
+    p {
+        font-size: 12px;
+    }
+
+    body {
+        font-size: 12px !important;
+        line-height: 18px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .quick-go-section,
+    a.quick-go,
+    a.scroll-top {
+        display: none !important;
+    }
+
+    .profile-photo img {
+        width: 50%;
+    }
+
+    .side-bar {
+        width: 20%;
+    }
+
+    .content-panel {
+        width: 80%;
+    }
+
+    .section-title {
+        position: relative;
+        color: #fff !important;
+        background: transparent !important;
+        font-size: 12px;
+        padding: 7px !important;
+        z-index: 10;
+    }
+
+    .section-title::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-bottom: 22px solid #333;
+        z-index: -2;
+        position: absolute;
+        left: 2px;
+        top: -5px;
+    }
+
+    .header::after,
+    .brdr:after {
+        width: 20%;
+    }
+
+    .blue {
+        background-color: transparent !important;
+        color: #fff !important;
+    }
+
+    ul.list-square li {
+        padding-bottom: 5px !important;
+    }
+
+    .label.before::before,
+    .label.before::after {
+        display: none;
+    }
+
+    .page-break-print {
+        page-break-after: always !important;
+    }
+
+    .brdr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    table.tbl tr th {
+        border-bottom: 1px solid #ccc !important;
+        border-right: 1px solid #ccc !important;
+        border-top: 1px solid #ccc !important;
+        color: #000 !important;
+        text-align: left !important;
     }
 }
