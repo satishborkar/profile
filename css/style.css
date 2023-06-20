@@ -396,6 +396,10 @@ table.tbl tr th {
     float: right;
 }
 
+.force-page-new {
+    display: none;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
         transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -569,6 +573,8 @@ table.tbl tr th {
         font-size: 12px;
         padding: 7px !important;
         z-index: 10;
+        font-weight: 400;
+        border-radius: 3px;
     }
 
     .section-title::before {
@@ -617,4 +623,18 @@ table.tbl tr th {
         color: #000 !important;
         text-align: left !important;
     }
+
+    .header {
+        border-bottom-color: #000 !important;
+    }
+
+    .pagebreak {
+        page-break-before: always;
+    }
+
+    .force-page-new {
+        height: 250px;
+    }
+
+    /* page-break-after works, as well */
 }
